@@ -51,6 +51,11 @@ Research Areas
 * AI Safety and Alignment
 * Qualitative Research
 
+Related Projects
+
+* Interaction Drift Monitor — Conceptual Python prototype for monitoring semantic drift across sustained human-AI interaction using text comparison and longitudinal evaluation methods.
+* Affective Agent Prototype — Exploratory Python prototype modeling affective state, symbolic interaction, memory logging, and autonomous behavior loops in an AI-inspired agent.
+
 Citation
 
 @misc{siemasz2026thirdspace,
