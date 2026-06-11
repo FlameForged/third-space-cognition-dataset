@@ -60,17 +60,18 @@ def main() -> None:
     report.append("")
 
     columns_to_summarize = [
-        "Model",
-        "Platform",
-        "Session Type",
-        "Primary Pattern",
-        "Secondary Pattern",
-        "Prompt Type",
-        "Response Type",
-        "Safety Intervention",
-        "Memory Availability",
-        "Evidence Strength",
-        "Coding Confidence",
+        "model",
+"platform",
+"session_type",
+"primary_pattern",
+"secondary_pattern",
+"user_prompt_type",
+"model_response_type",
+"safety_intervention_present",
+"memory_available",
+"evidence_strength",
+"coding_confidence",
+
     ]
 
     for column in columns_to_summarize:
