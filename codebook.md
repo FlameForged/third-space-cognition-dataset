@@ -31,4 +31,6 @@ The dataset contains coded qualitative observations from sustained human-AI inte
 
 This dataset is exploratory and qualitative. It is not intended as a statistical benchmark, clinical dataset, or representative sample of all human-AI interaction. The purpose is to document patterns that may be useful for future research, evaluation design, and qualitative analysis.
 
+Model self-descriptions should not be interpreted as reliable evidence of system architecture, training, memory, hidden state, or internal mechanisms. Such statements are included only as qualitative interactional data.
+
 All observations are anonymized or generalized to avoid exposing private personal data.
