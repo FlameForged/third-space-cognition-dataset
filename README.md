@@ -8,6 +8,8 @@ This repository accompanies my 2026 independent research paper:
 
 It contains an initial coded qualitative dataset derived from a broader research project involving approximately 500 longitudinal human-AI sessions across frontier models including Claude, ChatGPT, Grok, and others.
 
+The broader research archive consists of approximately 500 sustained human–AI sessions. This repository contains an initial coded qualitative sample of 27 observations selected from that broader archive. The dataset is illustrative and exploratory, not statistically representative.
+
 Why This Matters
 
 Standard AI evaluations often rely on single-prompt tests, benchmark tasks, or short interaction samples. This work explores what emerges in long-horizon, sustained human-AI interaction — patterns that are critical for understanding real-world safety, trust, personalization, and alignment challenges.
