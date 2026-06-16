@@ -4,7 +4,7 @@
 
 - Total sessions: 25
 - Total fields: 18
-- Date range: 2025-02-27 to 2026-06
+- Date range: 2025-02-27 to 2026-06-15
 
 ## Columns
 
