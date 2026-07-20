@@ -5,8 +5,8 @@ This script loads the exploratory human-AI interaction dataset and generates
 simple descriptive summaries for the coded observations.
 
 Dataset: HI_Data.csv
-Related research: Third-Space Cognition: Interaction-Level Dynamics
-in Sustained Human-AI Coupling
+Related research: Third-Space Cognition: A Theory-Driven Review
+of Sustained Human-AI Coupling
 DOI: 10.5281/zenodo.18679265
 """
 
@@ -49,6 +49,8 @@ def main() -> None:
         "",
         f"- Total observations: {len(df)}",
         f"- Total fields: {len(df.columns)}",
+        "- Review manuscript snapshot: 27 observations (session IDs 001–027)",
+        "- Repository status: evolving dataset; later additions are not analyzed in the submitted review",
         "",
         "## Columns",
         "",
