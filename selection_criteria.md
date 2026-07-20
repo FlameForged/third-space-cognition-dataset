@@ -4,9 +4,9 @@
 
 This file explains how observations were selected for inclusion in `HI_Data.csv`, the public coded qualitative sample accompanying the manuscript:
 
-**Third-Space Cognition: Interaction-Level Dynamics in Sustained Human–AI Coupling**
+**Third-Space Cognition: A Theory-Driven Review of Sustained Human-AI Coupling**
 
-The broader research archive consists of approximately 500 sustained human–AI interaction sessions across multiple model families and platforms. The public dataset is not a complete release of that archive. Instead, it contains an initial coded qualitative sample of observations selected to illustrate recurring interaction-level patterns identified during longitudinal engagement.
+The broader research archive consists of approximately 500 sustained human–AI interaction sessions across multiple model families and platforms. The public dataset is not a complete release of that archive. The review manuscript and blinded supplement use a frozen 27-observation snapshot comprising session IDs 001–027. The live repository may contain later additions selected under the same exploratory criteria.
 
 The purpose of this sample is qualitative transparency, not statistical representation. The dataset is intended to document analytically relevant cases that support further study of sustained human–AI interaction, trust calibration, personalization, safety behavior, and interaction-level alignment.
 
@@ -115,7 +115,7 @@ These limitations are consistent with the exploratory purpose of the dataset and
 
 ## Relationship to the Broader Archive
 
-The broader archive consists of approximately 500 sustained interaction sessions. The public dataset represents an initial coded sample drawn from that archive.
+The broader archive consists of approximately 500 sustained interaction sessions. The review manuscript analyzes the frozen 27-observation snapshot comprising session IDs 001–027; the live public repository is an evolving coded sample and may contain later additions.
 
 The public sample should be understood as:
 
