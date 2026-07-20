@@ -4,10 +4,10 @@ Exploratory coded qualitative dataset from sustained human-AI interaction resear
 
 This repository accompanies the manuscript:
 
-**Third-Space Cognition: Interaction-Level Dynamics in Sustained Human-AI Coupling**
+**Third-Space Cognition: A Theory-Driven Review of Sustained Human-AI Coupling**
 
 Author: **Rachelle Siemasz**  
-Project type: Exploratory qualitative research / longitudinal auto-ethnographic study  
+Project type: Theory-driven integrative review with bounded reflective case material  
 Dataset status: Initial public coded sample  
 Repository version: Early-stage research release
 
@@ -17,9 +17,9 @@ Repository version: Early-stage research release
 
 This repository contains an initial coded qualitative dataset derived from a broader independent research project on sustained human-AI interaction.
 
-The broader research archive consists of approximately **500 longitudinal human-AI sessions** across multiple AI systems and platforms. This repository currently contains a public coded sample of **27 observations** selected from that broader archive for qualitative analysis.
+The broader research archive consists of approximately **500 longitudinal human-AI sessions** across multiple AI systems and platforms. This evolving repository currently contains **29 coded observations**. The review manuscript and its blinded supplement use a frozen **27-observation snapshot** comprising session IDs 001–027.
 
-The dataset supports the manuscript **“Third-Space Cognition: Interaction-Level Dynamics in Sustained Human-AI Coupling,”** which examines how recurring interaction-level patterns may emerge during long-horizon human-AI engagement.
+The dataset supports the manuscript **“Third-Space Cognition: A Theory-Driven Review of Sustained Human-AI Coupling,”** which examines how recurring interaction-level patterns may emerge during long-horizon human-AI engagement.
 
 This dataset is intended to support qualitative transparency, theory development, research design, and future empirical study. It is **not** a statistical benchmark, controlled experiment, or representative sample of all human-AI interaction.
 
@@ -72,7 +72,7 @@ These patterns are analyzed as **interaction-level phenomena**. They are not tre
 | Dataset item | Description |
 |---|---|
 | Broader archive | Approximately 500 sustained human-AI sessions |
-| Public coded observations | 27 observations |
+| Current public coded observations | 29 observations |
 | Study design | Longitudinal qualitative / auto-ethnographic |
 | Participant structure | Single researcher-user interacting with multiple AI systems |
 | Model/platform families | ChatGPT, Claude, Grok, DeepSeek, Perplexity, Pi, Kimi, and multi-platform transfer sessions |
@@ -109,7 +109,7 @@ Optional future files may include:
 
 ## Public Dataset and Broader Archive
 
-The broader research archive contains approximately **500 sustained human-AI interaction sessions**. The current public dataset contains **27 coded observations** selected from that archive.
+The broader research archive contains approximately **500 sustained human-AI interaction sessions**. The current public dataset contains **29 coded observations** selected from that archive. The review manuscript refers specifically to the frozen **27-observation snapshot** comprising session IDs 001–027.
 
 The public dataset should be understood as:
 
@@ -254,7 +254,7 @@ analysis_summary.md
 
 This is an early-stage qualitative dataset.
 
-The current version contains an initial coded sample of 27 observations. It is not intended to represent the full scope of the broader 500-session research archive.
+The current version contains 29 coded observations. The review manuscript and blinded supplementary file remain tied to the frozen 27-observation snapshot comprising session IDs 001–027. Neither version is intended to represent the full scope of the broader 500-session research archive.
 
 Future versions may include:
 
@@ -306,7 +306,7 @@ For a fuller discussion, see:
 
 ## Selection Criteria
 
-The 27 public observations were selected from the broader archive based on analytical relevance, source traceability, anonymization feasibility, pattern clarity, diversity across models/platforms, and qualitative evidence strength.
+The first 27 observations forming the manuscript snapshot were selected from the broader archive based on analytical relevance, source traceability, anonymization feasibility, pattern clarity, diversity across models/platforms, and qualitative evidence strength. Later repository additions follow the same exploratory criteria but are not analyzed in the submitted review.
 
 For details, see:
 
@@ -330,7 +330,7 @@ For full licensing details, see:
 
 If referencing this dataset or related research, please cite:
 
-Siemasz, R. (2026). *Third-Space Cognition: Interaction-Level Dynamics in Sustained Human-AI Coupling*. Dataset and supporting materials. Zenodo. https://doi.org/10.5281/zenodo.18679265
+Siemasz, R. (2026). *Third-Space Cognition: A Theory-Driven Review of Sustained Human-AI Coupling*. Dataset and supporting materials. Zenodo. https://doi.org/10.5281/zenodo.18679265
 
 If citing the GitHub repository directly, please include the repository URL and the specific release version or commit used.
 
