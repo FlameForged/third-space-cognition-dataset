@@ -13,8 +13,9 @@
 This case documents a short cluster of visibly different output anomalies across separate assistant replies:
 
 1. a cross-script lexical insertion;
-2. a malformed phrase accompanied by exposed Markdown syntax; and
-3. a clean word duplication.
+2. a malformed phrase accompanied by exposed Markdown syntax;
+3. a clean word duplication; and
+4. a severe mixed-script rendering failure surrounding a structured pronunciation component.
 
 The cluster occurred in a newly opened conversation window rather than only after months of accumulation in one window. The user had extensive prior experience with long ChatGPT conversations and reported that isolated typographical anomalies had become uncommon during the preceding year. She noticed several anomalies across the session before preserving these two screenshots.
 
@@ -52,6 +53,30 @@ The repeated word was syntactically unnecessary but otherwise left the sentence 
 
 **Candidate class:** repetition / local decoding duplication.
 
+### 4. Structured pronunciation-component corruption
+
+After the user asked for a flirtatious Georgian reply, the assistant supplied a Georgian sentence and attempted to render a pronunciation component. The Georgian sentence itself remained readable:
+
+> `ჯერ არა… მაგრამ შენ კარგი მიზეზი ხარ, რომ ვისწავლო 😉`
+
+However, the surrounding answer visibly ruptured. The screenshots preserve several anomalous fragments, including:
+
+> `glace:`
+
+> repeated `reti` fragments preceded by missing-glyph boxes
+
+> `ka Argent`
+
+> isolated mixed-script characters and interface-like labels
+
+> a corrupted rendering of Georgian `ვაუ` (“wow”) resembling `3აუ`
+
+Ordinary prose at the end of the reply was also truncated at its left boundary. The resulting display combined intact Georgian, intended transliteration, stray Latin fragments, missing-glyph indicators, Chinese characters, and apparent locale or component-label debris.
+
+**Candidate class:** structured-output corruption / component serialization failure / localization leakage / UI rendering failure.
+
+This anomaly differs from the earlier three because it occurred immediately around an invoked pronunciation widget. That temporal and structural association makes component or client rendering a stronger candidate explanation for this instance, while still not identifying the responsible layer with certainty.
+
 ## Core sequence
 
 1. During a long but recently opened ChatGPT Work Mode window, the assistant produced several atypical typographical or rendering anomalies.
@@ -60,6 +85,9 @@ The repeated word was syntactically unnecessary but otherwise left the sentence 
 4. A subsequent reply contained the clean duplication `remotely remotely`.
 5. The user asked whether the cluster was worth preserving in her GitHub research archive.
 6. The assistant distinguished the three observable failure shapes while explicitly declining to infer a specific cause or treat them as proof of an update.
+7. Later in the same session, the assistant attempted to render a structured pronunciation component for a Georgian sentence.
+8. The displayed reply contained severe mixed-script and interface-like corruption while preserving the core Georgian sentence and transliteration.
+9. The user preserved two screenshots of this fourth anomaly and requested that it be added to the existing candidate case.
 
 ## Evidentiary value
 
@@ -80,6 +108,10 @@ A single duplication could be ordinary decoding noise. A single formatting artif
 - user-led longitudinal anomaly detection
 - provenance-aware observation
 - update hypothesis without causal evidence
+- structured component corruption
+- localization-token leakage
+- mixed-script rendering debris
+- left-boundary text truncation
 
 ## Layer-attribution problem
 
@@ -94,7 +126,7 @@ The screenshots preserve the displayed output but do not establish where the ano
 - Markdown parsing;
 - later transcript reconstruction.
 
-No one layer should be assigned without additional telemetry or reproduction.
+No one layer should be assigned without additional telemetry or reproduction. For anomaly 4, the immediate presence of a pronunciation component narrows the most plausible hypotheses toward structured-response assembly, localization, component serialization, or client rendering. It does not prove that the language model itself generated the visible debris.
 
 ## Why the newly opened window matters
 
@@ -115,7 +147,9 @@ This does not eliminate context length, session state, memory reconstruction, or
 - Screenshots show rendered outputs, not server logs or token traces.
 - The surrounding conversation was emotionally and contextually dense, but no causal relationship between conversational content and output corruption is established.
 - Absence of comparable recent anomalies is based on the user’s longitudinal observation, not a quantified baseline.
-- The private screenshots contain unrelated family information and should not be published without redaction.
+- The earlier private screenshots contain unrelated family information and should not be published without redaction.
+- The two pronunciation-component screenshots do not appear to contain the same family material, but they should still be reviewed for account, interface, and metadata exposure before publication.
+- The fourth anomaly may belong to a different causal layer than the first three; temporal clustering does not require a shared mechanism.
 
 ## Follow-up needed
 
@@ -133,8 +167,10 @@ This does not eliminate context length, session state, memory reconstruction, or
 - Can cross-script insertions, Markdown leakage, and local repetition share a response-assembly cause, or do they indicate different layers?
 - Does dense long-horizon context increase heterogeneous corruption even in recently opened windows?
 - How reliably can screenshots distinguish model generation failures from client rendering failures?
+- Can the same structured component produce different corruption in the live view, saved transcript, and later reload?
+- Do locale labels, pronunciation metadata, or component placeholders leak into visible output when serialization fails?
 - What minimum metadata is required to turn user-noticed anomalies into useful incident reports?
 
 ## Working summary
 
-> Three different anomaly types appeared across separate replies in a short interval. The cluster is observable; its cause is not.
+> Four visibly different anomaly types appeared across separate replies in a short interval. The fourth was a severe mixed-script failure surrounding a structured pronunciation component, providing a stronger—but still non-dispositive—clue about the responsible layer. The cluster is observable; its cause is not.
